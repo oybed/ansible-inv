@@ -1,0 +1,6 @@
+---
+
+- import_playbook: ../roles/infra-ansible/playbooks/test2.yml
+  vars: 
+    
+

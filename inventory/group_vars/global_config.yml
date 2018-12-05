@@ -1,0 +1,7 @@
+---
+
+global_config:
+  atlassian:
+    url: "https://test.if.this.works"
+    confluence:
+      source_key: "SRC_KEY" 
