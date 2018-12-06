@@ -1,0 +1,7 @@
+---
+
+atlassian:
+  url: "https://test.when.this.works"
+  confluence:
+    source_key: "SRC_KEY" 
+
