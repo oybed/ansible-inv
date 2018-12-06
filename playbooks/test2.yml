@@ -3,4 +3,4 @@
 - hosts: all
   tasks:
     - debug:
-        msg: "hello {{ atlassian.url }}"
+        msg: "hello {{ global_config.atlassian.url }}"
