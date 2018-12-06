@@ -1,6 +1,6 @@
 ---
 
-- hosts: all
+- hosts: atlassian
   tasks:
     - debug:
         msg: "hello {{ global_config.atlassian.url }}"
