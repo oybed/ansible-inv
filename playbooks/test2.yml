@@ -2,5 +2,15 @@
 
 - hosts: atlassian
   tasks:
+    - set_fact:
+        atlassian_url: "{{ atlassian.url }}" 
+      when: 
+        - atlassian is defined
+        - atlassian.url is defined
+    - set_fact:
+        atlassian_url: "{{ global_config.atlassian.url }}" 
+      when: 
+        - atlassian is undefined or
+          atlassian.url is undefined
     - debug:
-        msg: "hello {{ atlassian.url | default(global_config.atlassian.url) }}"
+        msg: "hello {{ atlassian_url }}"
